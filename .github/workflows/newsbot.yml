@@ -2,7 +2,7 @@ name: AI News Bot
 
 on:
   schedule:
-    - cron: '0 */3 * * *'   # every hour
+    - cron: '0 */12 * * *'   # every hour
 
   workflow_dispatch:
 
