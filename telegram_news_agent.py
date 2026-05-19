@@ -12,7 +12,7 @@ TELEGRAM_TOKEN   = os.getenv("TELEGRAM_TOKEN")  # from @BotFather
 TELEGRAM_CHAT_ID = TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")            # from getUpdates URL
 MAX_STORIES = 4
 REPEAT = False
-INTERVAL_HOURS = 6
+INTERVAL_HOURS = 12
 
 
 # Gemini Client
@@ -284,8 +284,3 @@ if validate():
             f"\n⏳ Next update in {INTERVAL_HOURS} hours. Keep this tab open!"
         )
 
-        while True:
-
-            time.sleep(INTERVAL_HOURS * 60 * 60)
-
-            run_news_job()
