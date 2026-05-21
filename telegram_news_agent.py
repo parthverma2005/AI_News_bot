@@ -10,7 +10,7 @@ load_dotenv()
 GROQ_API_KEY   = os.getenv("GROQ_API_KEY")     # from aistudio.google.com
 TELEGRAM_TOKEN   = os.getenv("TELEGRAM_TOKEN")  # from @BotFather
 TELEGRAM_CHAT_ID = TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")            # from getUpdates URL
-MAX_STORIES = 4
+MAX_STORIES = 6
 REPEAT = False
 INTERVAL_HOURS = 12
 
